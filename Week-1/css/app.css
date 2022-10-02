@@ -1,4 +1,23 @@
+body {
+    font-family: "Lato";
+}
+
 header {
     background-color: #373436;
     color:#fff;
+}
+
+footer {
+    background-color: #13125f;
+    color:#fff;
+}
+
+td {
+    padding: 10px 100px;
+    text-align: left;
+    font-size: 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
 }
