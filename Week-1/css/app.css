@@ -1,15 +1,51 @@
-body {
+html, body {
     font-family: "Lato";
+    height: 100%;
 }
 
-header {
-    background-color: #373436;
-    color:#fff;
+main {
+    flex: 1 0 auto;
+    display: flex;
 }
 
-footer {
-    background-color: #13125f;
-    color:#fff;
+aside {
+    flex: 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+  
+aside i.fa {
+    font-size: 1.5em;
+}
+
+.content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.music-head {
+    flex: 0 0 280px;
+    display: flex;
+    padding: 40px;
+    background-color: #565656;
+}
+
+.music-head img {
+    width: 150px;
+    height:150px;
+}
+
+.catty-music {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #fff;
+    padding-left: 50px;
 }
 
 td {
@@ -17,7 +53,39 @@ td {
     text-align: left;
     font-size: 12px;
 }
-
+.anchorBox {
+    border: 1px solid;
+    text-decoration: none;
+    padding: 3px;
+}
 tr:nth-child(even) {
     background-color: #eee;
+}
+
+footer {
+    flex: 0 0 90px;
+    color: #fff;
+    background-color: #2e6297;
+    display: flex;
+    padding: 10px;
+}
+
+.footerBox {
+    display: flex;
+    margin-right: auto;
+    /* align-items: flex-start; */
+}
+.footerBox img {
+    width: 100px;
+    margin: 10px;
+}
+
+.music-controls {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.music-controls i {
+    font-size: 1em;
 }
